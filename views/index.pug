@@ -1,5 +1,30 @@
 extends layout
 
 block content
-  h1 Welcome to Event Planning App
-  p This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service.
+  section.hero
+    h2.welcome Welcome to Event Planning App
+    p.description This is a web application where you can create, view, update, and delete events.
+
+  section.features
+    h3.section-title App Features
+    ul.features-list
+      li
+        i.fa.fa-calendar
+        span.feature-text Create and manage events with ease.
+      li
+        i.fa.fa-map-marker
+        span.feature-text Specify event locations accurately.
+      li
+        i.fa.fa-users
+        span.feature-text Collaborate with other users on event planning.
+      li
+        i.fa.fa-edit
+        span.feature-text Update event information effortlessly.
+      li
+        i.fa.fa-trash
+        span.feature-text Delete events you no longer need.
+
+  section.cta
+    h3.section-title Ready to get started?
+    a.cta-button(href='/events') Create Your First Event
+  

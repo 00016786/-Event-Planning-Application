@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  section
+    h2 Create New Event
+    form(action='/events', method='POST')
+      div.form-group
+        label(for='eventName') Event Name:
+        input#eventName.form-control(type='text', name='eventName', required)
+      div.form-group
+        label(for='eventDate') Event Date:
+        input#eventDate.form-control(type='date', name='eventDate', required)
+      div.form-group
+        label(for='eventLocation') Event Location:
+        input#eventLocation.form-control(type='text', name='eventLocation', required)
+      div.form-group
+        label(for='eventDescription') Event Description:
+        textarea#eventDescription.form-control(name='eventDescription', rows='3', required)
+      button.btn.btn-primary(type='submit') Create Event

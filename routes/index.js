@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
+// Define routes for events
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Event Planning App' });
+  // Handle events routes
 });
 
 module.exports = router;
